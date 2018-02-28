@@ -16,6 +16,10 @@ public class test01 {
     
     private ApplicationContext ctx = null;
     
+    public void a(){
+    	System.out.println("2222");
+    }
+    
     @Before
     public void doBefore(){
         ctx = new ClassPathXmlApplicationContext("classpath:spring.xml");
