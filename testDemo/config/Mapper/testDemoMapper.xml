@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.testDemoMapper">
+    <resultMap type="com.test.model.testDemo" id="demoResultMap">
+        <id column="s_id" property="sId"/>
+        <result column="s_name" property="sName"/>
+        <result column="s_text" property="sText"/>
+        <result column="s_age" property="sAge"/>
+    </resultMap>
+    
+    <select id="getAllBeans" resultMap="demoResultMap">
+        select * from ssmdemo  
+    </select>
+</mapper>
