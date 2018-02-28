@@ -16,6 +16,9 @@ public class test01 {
     
     private ApplicationContext ctx = null;
     
+    public void a(){
+	    Systen.out.println("1111");
+    }
     @Before
     public void doBefore(){
         ctx = new ClassPathXmlApplicationContext("classpath:spring.xml");
@@ -28,9 +31,9 @@ public class test01 {
     		 List<testDemo> beans = ssmDemoService.getAllRecords();
     		 System.out.println(beans.size());
     	        for(int i=0;i<beans.size();i++){
-    	        	testDemo example = beans.get(i);//获取每一个Example对象
+    	        	testDemo example = beans.get(i);//禄帽脠隆脙驴脪禄赂枚Example露脭脧贸
     	            String name = example.getsName();
-    	            System.out.print("第"+i+"个=？"+name);
+    	            System.out.print("碌脷"+i+"赂枚=拢驴"+name);
     	        }
 		} catch (Exception e) {
 			System.out.println(e);
